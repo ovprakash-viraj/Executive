@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1800" viewBox="0 0 1200 1800" role="img" aria-labelledby="title desc">
+<title id="title">What Happens After a Time Entry Is Approved in Dynamics 365 Project Operations?</title>
+<desc id="desc">Infographic showing the flow from time entry through cost, unbilled sales, invoicing, billed sales and project margin.</desc>
+<style>
+  .bg{fill:#f7fbff}.navy{fill:#103b73}.blue{fill:#1f6fd6}.green{fill:#1b9a59}.orange{fill:#e89414}.purple{fill:#6d49a8}.teal{fill:#1395a5}.red{fill:#c7444d}
+  .card{fill:#fff;stroke:#d9e7f6;stroke-width:2}.softblue{fill:#eaf4ff}.softgreen{fill:#edf9f1}.softorange{fill:#fff6df}.softpurple{fill:#f5efff}.softteal{fill:#eafafb}
+  .h1{font-family:Arial,sans-serif;font-size:52px;font-weight:700;fill:#103b73}.h2{font-family:Arial,sans-serif;font-size:30px;font-weight:700;fill:#103b73}
+  .h3{font-family:Arial,sans-serif;font-size:24px;font-weight:700;fill:#103b73}.body{font-family:Arial,sans-serif;font-size:20px;fill:#1f3552}
+  .small{font-family:Arial,sans-serif;font-size:17px;fill:#34506f}.white{fill:#fff}.bold{font-weight:700}.center{text-anchor:middle}
+  .line{stroke:#b7d0ec;stroke-width:3}.arrow{fill:#1f6fd6}
+</style>
+<rect class="bg" width="1200" height="1800"/>
+<text x="55" y="80" class="h1">What Happens After a Time Entry Is Approved</text>
+<text x="55" y="140" class="h1">in Dynamics 365 Project Operations?</text>
+<text x="55" y="190" class="body">From Time Entry to Cost, Unbilled Sales, Invoice, Billed Sales and Project Margin</text>
+
+<g transform="translate(45,240)">
+  <rect x="0" y="0" width="1110" height="120" rx="22" class="softblue"/>
+  <text x="40" y="45" class="h3">8 Hours</text><text x="40" y="78" class="small">Consultant works on a project task</text>
+  <line x1="270" y1="20" x2="270" y2="100" class="line"/>
+  <text x="310" y="45" class="h3">Multiple Transactions</text><text x="310" y="78" class="small">Cost, sales and financial records are created</text>
+  <line x1="610" y1="20" x2="610" y2="100" class="line"/>
+  <text x="650" y="45" class="h3">Fully Connected</text><text x="650" y="78" class="small">End-to-end traceability through the lifecycle</text>
+  <line x1="890" y1="20" x2="890" y2="100" class="line"/>
+  <text x="925" y="45" class="h3">Real Impact</text><text x="925" y="78" class="small">Drives billing and margin</text>
+</g>
+
+<g transform="translate(45,400)">
+  <rect x="0" y="0" width="350" height="360" rx="22" class="card"/>
+  <circle cx="55" cy="50" r="30" class="blue"/><text x="55" y="59" class="h3 white center">1</text>
+  <text x="105" y="58" class="h2">Enter Time Entry</text>
+  <text x="30" y="115" class="body">Consultant enters <tspan class="bold">8 hours</tspan></text>
+  <text x="30" y="145" class="body">against a project and task.</text>
+  <rect x="30" y="185" width="290" height="135" rx="14" class="softblue"/>
+  <text x="50" y="220" class="h3">Example</text>
+  <text x="50" y="252" class="small">Project: ERP Program</text>
+  <text x="50" y="280" class="small">Task: Solution Design</text>
+  <text x="50" y="308" class="small">Hours: 8</text>
+
+  <rect x="380" y="0" width="350" height="360" rx="22" class="card"/>
+  <circle cx="435" cy="50" r="30" class="green"/><text x="435" y="59" class="h3 white center">2</text>
+  <text x="485" y="58" class="h2">Submit Time Entry</text>
+  <text x="410" y="115" class="body">Submission creates journal</text>
+  <text x="410" y="145" class="body">information for:</text>
+  <rect x="410" y="185" width="290" height="60" rx="12" class="softorange"/>
+  <text x="430" y="223" class="h3">Cost Journal Line</text>
+  <rect x="410" y="265" width="290" height="60" rx="12" class="softblue"/>
+  <text x="430" y="303" class="h3">Unbilled Sales Journal Line</text>
+
+  <rect x="760" y="0" width="350" height="360" rx="22" class="card"/>
+  <circle cx="815" cy="50" r="30" class="orange"/><text x="815" y="59" class="h3 white center">3</text>
+  <text x="865" y="58" class="h2">Approve Time Entry</text>
+  <text x="790" y="115" class="body">Project Manager approval creates:</text>
+  <rect x="790" y="175" width="290" height="60" rx="12" class="softorange"/>
+  <text x="810" y="213" class="h3">Cost Actual</text>
+  <rect x="790" y="255" width="290" height="60" rx="12" class="softblue"/>
+  <text x="810" y="293" class="h3">Unbilled Sales Actual</text>
+  <text x="790" y="340" class="small">Connected for traceability.</text>
+</g>
+
+<g transform="translate(45,790)">
+  <rect x="0" y="0" width="350" height="330" rx="22" class="card"/>
+  <circle cx="55" cy="50" r="30" class="red"/><text x="55" y="59" class="h3 white center">4</text>
+  <text x="105" y="58" class="h2">Create Project Invoice</text>
+  <text x="30" y="120" class="body">Approved unbilled transactions</text>
+  <text x="30" y="150" class="body">become billing candidates.</text>
+  <rect x="30" y="200" width="290" height="80" rx="14" class="softblue"/>
+  <text x="50" y="238" class="h3">Unbilled Sales Actual</text>
+  <text x="50" y="266" class="small">feeds the project invoice.</text>
+
+  <rect x="380" y="0" width="350" height="330" rx="22" class="card"/>
+  <circle cx="435" cy="50" r="30" class="purple"/><text x="435" y="59" class="h3 white center">5</text>
+  <text x="485" y="58" class="h2">Confirm Invoice</text>
+  <text x="410" y="120" class="body">Confirmation creates:</text>
+  <rect x="410" y="170" width="290" height="60" rx="12" fill="#fdecee"/>
+  <text x="430" y="208" class="h3">Unbilled Sales Reversal</text>
+  <rect x="410" y="245" width="290" height="60" rx="12" class="softgreen"/>
+  <text x="430" y="283" class="h3">Billed Sales Actual</text>
+
+  <rect x="760" y="0" width="350" height="330" rx="22" class="card"/>
+  <circle cx="815" cy="50" r="30" class="teal"/><text x="815" y="59" class="h3 white center">6</text>
+  <text x="865" y="58" class="h2">Project Financials</text>
+  <text x="790" y="115" class="body">Approved time contributes to:</text>
+  <text x="805" y="160" class="small">✓ Project actual cost</text>
+  <text x="805" y="190" class="small">✓ Unbilled / billed revenue</text>
+  <text x="805" y="220" class="small">✓ Forecast / EAC analysis</text>
+  <text x="805" y="250" class="small">✓ Project margin</text>
+  <text x="805" y="280" class="small">✓ Audit traceability</text>
+</g>
+
+<g transform="translate(45,1160)">
+  <rect x="0" y="0" width="1110" height="190" rx="22" class="softblue"/>
+  <text x="30" y="45" class="h2">Illustrative Example — 8 Hours</text>
+  <text x="40" y="95" class="body">Time Entry</text><text x="40" y="128" class="h3">8 hours</text>
+  <text x="210" y="95" class="body">Cost Rate</text><text x="210" y="128" class="h3">₹2,000/hr</text>
+  <text x="390" y="95" class="body">Cost Actual</text><text x="390" y="128" class="h3">₹16,000</text>
+  <text x="575" y="95" class="body">Sales Rate</text><text x="575" y="128" class="h3">₹4,500/hr</text>
+  <text x="760" y="95" class="body">Unbilled Sales</text><text x="760" y="128" class="h3">₹36,000</text>
+  <text x="955" y="95" class="body">Invoice Value</text><text x="955" y="128" class="h3">₹36,000</text>
+</g>
+
+<g transform="translate(45,1390)">
+  <rect x="0" y="0" width="350" height="260" rx="22" class="softgreen"/>
+  <text x="25" y="48" class="h2">Why This Matters</text>
+  <text x="30" y="95" class="small">✓ Approval triggers financial transactions</text>
+  <text x="30" y="128" class="small">✓ Influences invoicing and margin</text>
+  <text x="30" y="161" class="small">✓ Creates audit traceability</text>
+  <text x="30" y="194" class="small">✓ Supports project reporting</text>
+
+  <rect x="380" y="0" width="350" height="260" rx="22" class="softorange"/>
+  <text x="405" y="48" class="h2">Key Takeaways</text>
+  <text x="410" y="95" class="small">✓ Approval creates Actuals</text>
+  <text x="410" y="128" class="small">✓ Invoice confirmation reverses unbilled</text>
+  <text x="410" y="161" class="small">✓ Transactions remain connected</text>
+  <text x="410" y="194" class="small">✓ Test the entire flow in UAT</text>
+
+  <rect x="760" y="0" width="350" height="260" rx="22" class="softpurple"/>
+  <text x="785" y="48" class="h2">Common Issues</text>
+  <text x="790" y="95" class="small">✓ Time not approved</text>
+  <text x="790" y="128" class="small">✓ Incorrect cost / sales rates</text>
+  <text x="790" y="161" class="small">✓ Integration journal pending</text>
+  <text x="790" y="194" class="small">✓ Invoice not confirmed</text>
+</g>
+
+<g transform="translate(45,1690)">
+  <rect x="0" y="0" width="1110" height="80" rx="20" class="navy"/>
+  <text x="555" y="38" class="h2 white center">Follow One Transaction. See the Complete Picture.</text>
+  <text x="555" y="66" class="small white center">Because in Dynamics 365 Project Operations, 8 hours can become an entire financial story.</text>
+</g>
+</svg>
