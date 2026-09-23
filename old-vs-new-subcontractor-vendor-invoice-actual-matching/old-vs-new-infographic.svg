@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600" role="img" aria-labelledby="title desc">
+<title id="title">OLD vs NEW: Subcontractor Vendor Invoice to Actual Matching</title>
+<desc id="desc">Comparison of the earlier procurement-focused approach and the new 2026 integrated actual matching approach in Dynamics 365 Project Operations.</desc>
+<style>
+.bg{fill:#f7fbff}.navy{fill:#103b73}.blue{fill:#1d73c9}.teal{fill:#129f9a}.orange{fill:#f37a20}.softb{fill:#eaf4ff}.softt{fill:#eafaf8}.softo{fill:#fff3ea}.softg{fill:#f7f9fc}.white{fill:#fff}
+.h1{font:700 46px Arial,sans-serif;fill:#103b73}.h2{font:700 30px Arial,sans-serif;fill:#103b73}.h3{font:700 23px Arial,sans-serif;fill:#103b73}.body{font:19px Arial,sans-serif;fill:#274b70}.small{font:17px Arial,sans-serif;fill:#3c5f80}.center{text-anchor:middle}.bold{font-weight:700}.card{fill:#fff;stroke:#d7e6f3;stroke-width:2}.line{stroke:#c9d8e5;stroke-width:2}
+</style>
+<rect width="1200" height="1600" class="bg"/>
+<text x="70" y="70" class="h1" fill="#f05b18">OLD</text><text x="205" y="70" class="h1">vs</text><text x="275" y="70" class="h1" fill="#129f9a">NEW:</text>
+<text x="430" y="70" class="h1">Subcontractor Vendor Invoice → Actual Matching</text>
+<text x="600" y="118" class="h2 center">Dynamics 365 Project Operations Integrated with ERP</text>
+<text x="600" y="155" class="body center">How Microsoft's 2026 enhancement improves AP validation, project cost accuracy and project margin visibility</text>
+
+<g transform="translate(35,205)">
+<rect x="0" y="0" width="545" height="88" rx="18" class="orange"/><text x="272" y="56" class="h2 white center">OLD APPROACH · PROCUREMENT FOCUSED</text>
+<rect x="0" y="105" width="545" height="595" rx="18" class="card"/>
+<text x="28" y="148" class="body">Earlier validation focused more heavily on procurement documents.</text>
+
+<circle cx="55" cy="210" r="24" fill="#ffd6bd"/><text x="55" y="219" class="h3 center">1</text>
+<text x="105" y="204" class="h3">AP focus</text><text x="105" y="234" class="body">PO → Product Receipt → Vendor Invoice</text>
+<line x1="25" y1="270" x2="520" y2="270" class="line"/>
+
+<circle cx="55" cy="325" r="24" fill="#ffd6bd"/><text x="55" y="334" class="h3 center">2</text>
+<text x="105" y="319" class="h3">Project Actuals</text><text x="105" y="349" class="body">Verified separately or through additional reconciliation</text>
+<line x1="25" y1="385" x2="520" y2="385" class="line"/>
+
+<circle cx="55" cy="440" r="24" fill="#ffd6bd"/><text x="55" y="449" class="h3 center">3</text>
+<text x="105" y="434" class="h3">Visibility</text><text x="105" y="464" class="body">Less direct view of project transactions behind the invoice</text>
+<line x1="25" y1="500" x2="520" y2="500" class="line"/>
+
+<circle cx="55" cy="555" r="24" fill="#ffd6bd"/><text x="55" y="564" class="h3 center">4</text>
+<text x="105" y="549" class="h3">Exception handling</text><text x="105" y="579" class="body">Quantity mismatches harder to spot during invoice review</text>
+<line x1="25" y1="615" x2="520" y2="615" class="line"/>
+
+<circle cx="55" cy="670" r="24" fill="#ffd6bd"/><text x="55" y="679" class="h3 center">5</text>
+<text x="105" y="664" class="h3">Business impact</text><text x="105" y="694" class="body">More manual reconciliation between Finance and Project Operations</text>
+
+<rect x="0" y="730" width="545" height="175" rx="18" class="softg"/>
+<text x="25" y="770" class="h3">Typical flow (Old approach)</text>
+<text x="272" y="835" class="body center">Subcontract → PO → Product Receipt → Vendor Invoice</text>
+<text x="272" y="870" class="body center">→ Separate project reconciliation</text>
+</g>
+
+<g transform="translate(620,205)">
+<rect x="0" y="0" width="545" height="88" rx="18" class="teal"/><text x="272" y="56" class="h2 white center">NEW 2026 APPROACH · PROJECT + FINANCE</text>
+<rect x="0" y="105" width="545" height="700" rx="18" class="card"/>
+<text x="28" y="148" class="body">Finance can validate invoices against the underlying project Actuals more directly.</text>
+
+<circle cx="55" cy="210" r="24" fill="#cceef3"/><text x="55" y="219" class="h3 center">1</text>
+<text x="105" y="204" class="h3">Match Actuals</text><text x="105" y="234" class="body">Available on the subcontract vendor invoice line</text>
+<line x1="25" y1="270" x2="520" y2="270" class="line"/>
+
+<circle cx="55" cy="325" r="24" fill="#cceef3"/><text x="55" y="334" class="h3 center">2</text>
+<text x="105" y="319" class="h3">Actual visibility</text><text x="105" y="349" class="body">View time, expense and material Actuals behind receipts</text>
+<line x1="25" y1="385" x2="520" y2="385" class="line"/>
+
+<circle cx="55" cy="440" r="24" fill="#cceef3"/><text x="55" y="449" class="h3 center">3</text>
+<text x="105" y="434" class="h3">Selection control</text><text x="105" y="464" class="body">Match / Unmatch Actuals that belong to the invoice</text>
+<line x1="25" y1="500" x2="520" y2="500" class="line"/>
+
+<circle cx="55" cy="555" r="24" fill="#cceef3"/><text x="55" y="564" class="h3 center">4</text>
+<text x="105" y="549" class="h3">Receipt alignment</text><text x="105" y="579" class="body">Update product receipt based on selected Actuals</text>
+<line x1="25" y1="615" x2="520" y2="615" class="line"/>
+
+<circle cx="55" cy="670" r="24" fill="#cceef3"/><text x="55" y="679" class="h3 center">5</text>
+<text x="105" y="664" class="h3">Posting outcome</text><text x="105" y="694" class="body">Post vendor invoice with stronger validation</text>
+<line x1="25" y1="730" x2="520" y2="730" class="line"/>
+
+<circle cx="55" cy="785" r="24" fill="#cceef3"/><text x="55" y="794" class="h3 center">6</text>
+<text x="105" y="779" class="h3">Project transaction lifecycle</text><text x="105" y="809" class="body">Reverse original Actual → create Vendor Invoice Actual</text>
+
+<rect x="0" y="835" width="545" height="200" rx="18" class="softt"/>
+<text x="25" y="875" class="h3">End-to-end flow (New 2026 approach)</text>
+<text x="272" y="930" class="body center">Subcontract → PO → Project Actual → Product Receipt</text>
+<text x="272" y="965" class="body center">→ Vendor Invoice → Match Actuals → Vendor Invoice Actual</text>
+<text x="272" y="1000" class="body center">→ Project Margin</text>
+</g>
+
+<g transform="translate(35,1150)">
+<rect x="0" y="0" width="1130" height="180" rx="20" class="navy"/>
+<text x="30" y="48" class="h2 white">Illustrative Example</text>
+<text x="40" y="95" class="body white">PO: 100 Hours × ₹3,000 = ₹3,00,000</text>
+<text x="40" y="128" class="body white">Actuals recorded: 80 Hours = ₹2,40,000</text>
+<text x="610" y="95" class="body white">Vendor invoice received: 100 Hours = ₹3,00,000</text>
+<text x="610" y="128" class="body white">NEW process insight: Match Actuals exposes the 20-hour variance during invoice review.</text>
+</g>
+
+<g transform="translate(35,1370)">
+<rect x="0" y="0" width="1130" height="120" rx="20" class="softb"/>
+<text x="30" y="42" class="h2">Why this update matters</text>
+<text x="45" y="84" class="body">✓ Better AP validation</text>
+<text x="305" y="84" class="body">✓ Less manual reconciliation</text>
+<text x="625" y="84" class="body">✓ Stronger audit traceability</text>
+<text x="900" y="84" class="body">✓ More reliable project margin</text>
+</g>
+
+<text x="35" y="1550" class="h3">OV Prakash | Dynamics 365 Project Operations</text>
+<text x="1165" y="1550" class="small" text-anchor="end">Real Projects. Real Insights. Better Financial Control.</text>
+</svg>
