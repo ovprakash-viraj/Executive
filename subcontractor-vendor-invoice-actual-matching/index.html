@@ -1,29 +1,55 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Understand how subcontractor vendor invoice matching to Actuals works in Dynamics 365 Project Operations Integrated with ERP, from subcontract and PO through product receipt, vendor invoice, reversal, and project margin.">
-<title>From Subcontractor Actual to Vendor Invoice: How Matching Works in Dynamics 365 Project Operations | OV Prakash</title>
+<meta name="description" content="Compare the earlier and 2026 subcontractor invoice matching experience, then trace Actuals, receipts, vendor invoices, reversals and project margin in Dynamics 365 Project Operations.">
+<title>OLD vs NEW: Subcontractor Vendor Invoice → Actual Matching in Dynamics 365 Project Operations | OV Prakash</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css"><link rel="canonical" href="https://www.virajprakash365.com/subcontractor-vendor-invoice-actual-matching/">
-<meta property="og:type" content="article"><meta property="og:title" content="Subcontractor Vendor Invoice → Actual Matching in Dynamics 365 Project Operations">
-<meta property="og:description" content="Trace subcontract activity from Project Operations Actuals through product receipt, vendor invoice matching, posting, reversal, and project margin.">
-<meta property="og:image" content="https://www.virajprakash365.com/subcontractor-vendor-invoice-actual-matching/infographic.svg">
+<meta property="og:url" content="https://www.virajprakash365.com/subcontractor-vendor-invoice-actual-matching/">
+<meta property="og:type" content="article"><meta property="og:title" content="OLD vs NEW: Subcontractor Vendor Invoice → Actual Matching in Dynamics 365 Project Operations">
+<meta property="og:description" content="Compare the earlier and 2026 subcontractor invoice matching experience, then trace Actuals, receipts, vendor invoices, reversals and project margin in Dynamics 365 Project Operations.">
+<meta property="og:image" content="https://www.virajprakash365.com/old-vs-new-subcontractor-vendor-invoice-actual-matching/old-vs-new-infographic.svg">
 <style>
-.blog-post{max-width:920px;margin:auto}.blog-post h1{font-size:clamp(2.2rem,5vw,4.1rem);line-height:1.06;margin:.4em 0}.blog-post h2{margin-top:2.5rem}.blog-post h3{margin-top:1.6rem}.blog-post p,.blog-post li{font-size:1.08rem;line-height:1.8}.blog-meta{opacity:.72;margin-bottom:2.4rem}.cover-image{width:100%;height:auto;display:block;margin:0 0 2.7rem;border-radius:18px;background:#f7fbff}.callout,.example,.flow{padding:24px;margin:28px 0;background:rgba(127,127,127,.08);border-radius:12px}.callout{border-left:4px solid currentColor}.flow{font-weight:700;line-height:1.85;text-align:center}.back-link{display:inline-block;margin-bottom:30px}.author-signoff{margin-top:50px;padding-top:25px;border-top:1px solid rgba(127,127,127,.25)}.blog-post a{word-break:break-word}
+.blog-post{max-width:920px;margin:auto}.blog-post h1{font-size:clamp(2.2rem,5vw,4.1rem);line-height:1.06;margin:.4em 0}.blog-post h2{margin-top:2.5rem}.blog-post h3{margin-top:1.6rem}.blog-post p,.blog-post li{font-size:1.08rem;line-height:1.8}.blog-meta{opacity:.72;margin-bottom:2.4rem}.cover-image{width:min(1160px,calc(100vw - 40px));max-width:none;height:auto;display:block;margin:0 0 2.7rem 50%;transform:translateX(-50%);border-radius:18px;background:#f7fbff;box-shadow:0 12px 34px rgba(16,59,115,.10)}@media(max-width:700px){.cover-image{width:calc(100vw - 24px)}}.callout,.example,.flow{padding:24px;margin:28px 0;background:rgba(127,127,127,.08);border-radius:12px}.callout{border-left:4px solid currentColor}.flow{font-weight:700;line-height:1.85;text-align:center}.back-link{display:inline-block;margin-bottom:30px}.author-signoff{margin-top:50px;padding-top:25px;border-top:1px solid rgba(127,127,127,.25)}.blog-post a{word-break:break-word}
+.compare{width:100%;border-collapse:collapse;margin:28px 0}.compare th,.compare td{padding:16px;border-bottom:1px solid rgba(127,127,127,.25);vertical-align:top}.compare th{text-align:left}
 </style></head><body>
 <header class="site-header"><div class="wrap nav"><a class="brand logo-brand" href="/"><img src="../Logo.png" alt="OV Prakash"></a><button class="menu" aria-label="Open menu">☰</button><nav><a href="/">Home</a><a href="/about/">About</a><a href="/expertise/">Expertise</a><a href="/articles/" class="active">Blogs</a><a href="/contact/" class="nav-btn">Contact</a></nav></div></header>
 <main><section class="page-hero"><div class="wrap blog-post"><a class="text-link back-link" href="/articles/">← Back to Blogs</a>
 <p class="kicker">DYNAMICS 365 PROJECT OPERATIONS · SUBCONTRACTING · ACTUALS · VENDOR INVOICE</p>
-<h1>From Subcontractor Actual to Vendor Invoice: How Matching Works in Dynamics 365 Project Operations</h1>
+<h1>OLD vs NEW: Subcontractor Vendor Invoice → Actual Matching in Dynamics 365 Project Operations</h1>
 <p class="lead">Why the new Match Actuals capability matters for Accounts Payable, project cost, financial traceability and project margin.</p>
 <p class="blog-meta">By OV Prakash · September 24, 2026</p></div></section>
 <section class="section"><article class="wrap blog-post">
-<img class="cover-image" src="infographic.svg" alt="Infographic showing subcontractor vendor invoice to Actual matching in Dynamics 365 Project Operations">
+<img class="cover-image" src="/old-vs-new-subcontractor-vendor-invoice-actual-matching/old-vs-new-infographic.svg" alt="OLD vs NEW infographic comparing subcontractor vendor invoice matching approaches in Dynamics 365 Project Operations">
 
 <p>A subcontractor completes project work. Project Operations records the consumption. A Cost Actual is created. Later, the subcontractor sends an invoice.</p>
 <p>At that point, one of the most important questions for Finance should be: <strong>does the vendor invoice actually represent the project work that was performed and recorded?</strong></p>
 <p>Microsoft is improving this process in Dynamics 365 Project Operations Integrated with ERP through the ability to match subcontractor vendor invoices to the Actuals behind the corresponding product receipts.</p>
 
 <div class="flow">Subcontract → Purchase Order → Project Actual → Product Receipt → Vendor Invoice → Match Actuals → Vendor Invoice Actual → Project Margin</div>
+
+<p>Microsoft's 2026 enhancement for <strong>subcontractor vendor invoice matching to Actuals</strong> in Dynamics 365 Project Operations Integrated with ERP is easy to misunderstand.</p>
+<p>The important point is not that vendor invoices could never be matched to project cost Actuals before. Project Operations already supported vendor-invoice verification against subcontract cost Actuals. The 2026 improvement brings stronger visibility and matching capability directly into the <strong>Finance vendor-invoice workflow</strong>, so procurement, project operations and accounts payable work through a more connected process.</p>
+
+<div class="callout"><strong>The real shift:</strong> from a procurement-first invoice check toward a Project Operations + Finance validation experience where AP can see and work with the underlying project Actuals directly during invoice review.</div>
+
+<h2 id="old-vs-new">OLD vs NEW at a glance</h2>
+<table class="compare">
+<tr><th>Earlier approach</th><th>New 2026 approach</th></tr>
+<tr><td>AP mainly worked through PO → Product Receipt → Vendor Invoice.</td><td><strong>Match Actuals</strong> is available on subcontract vendor-invoice lines in Finance.</td></tr>
+<tr><td>Project Actual verification often required separate Project Operations review or additional reconciliation.</td><td>Finance users can see underlying <strong>time, expense and material Actuals</strong> linked to the relevant receipts.</td></tr>
+<tr><td>Less direct project-transaction visibility during AP invoice review.</td><td>Invoice review can compare vendor billing with the project consumption behind the receipt.</td></tr>
+<tr><td>More manual cross-system reconciliation.</td><td>Users can <strong>Match / Unmatch</strong> Actuals against the invoice line.</td></tr>
+<tr><td>Quantity differences could be harder to identify in the AP process.</td><td>Actual quantity, receipt quantity and invoice quantity can be reviewed together.</td></tr>
+<tr><td>Project cost reconciliation continued after invoice processing.</td><td>Posting can lead to reversal of the original subcontract Actual and creation of the Vendor Invoice Actual.</td></tr>
+</table>
+
+<h3>Earlier process: procurement documents led the conversation</h3>
+<p>In a traditional AP-oriented review, the core documents are:</p>
+<div class="flow">Purchase Order → Product Receipt → Vendor Invoice</div>
+<p>That is still important. However, for subcontracted project work it doesn't answer one crucial question:</p>
+<div class="callout"><strong>What project work actually created the cost behind this receipt?</strong></div>
+<p>Project Operations has long supported vendor-invoice verification with approved subcontract Actuals, but the 2026 enhancement improves how directly Finance users can access that context while processing the vendor invoice.</p>
+
 
 <h2>Why this matters</h2>
 <p>Traditional invoice validation focuses on the procurement chain: Purchase Order → Product Receipt → Vendor Invoice. In a project-based business, however, another question matters just as much: <strong>what project activity created the receipt?</strong></p>
@@ -79,11 +105,13 @@ Operational project cost: ₹2,40,000
 <p>If invoice quantity, rates, matched Actuals, reversals, or downstream integrations are incorrect, the project's reported cost and profitability can also be misleading.</p>
 <div class="callout"><strong>Never validate project margin without confirming that subcontractor Actuals, receipts, vendor invoices, reversals, and vendor-invoice Actuals are complete and correctly connected.</strong></div>
 
-<h2>11. The end-to-end technical flow</h2>
+<h2 id="end-to-end-flow">11. The end-to-end technical flow</h2>
+<img class="cover-image" src="infographic.svg" alt="End-to-end subcontractor vendor invoice to Actual matching workflow in Dynamics 365 Project Operations" loading="lazy">
 <div class="flow">Project Subcontract<br>↓<br>Subcontract Line<br>↓<br>Purchase Order / PO Line<br>↓<br>Subcontractor Time, Expense or Material<br>↓<br>Project Cost Actual<br>↓<br>Product Receipt<br>↓<br>Vendor Invoice<br>↓<br>Match Actuals<br>↓<br>Validate Quantity and Amount<br>↓<br>Update Product Receipt if required<br>↓<br>Post Vendor Invoice<br>↓<br>Dataverse Synchronization<br>↓<br>Reverse Original Actual<br>↓<br>Create Vendor Invoice Actual<br>↓<br>Project Cost and Margin</div>
 
 <h2>12. Technical prerequisites and integration</h2>
 <p>Microsoft currently documents Dynamics 365 Finance 10.0.48 or later for the specific Match Actuals experience, together with the relevant Project Operations subcontracting configuration and feature enablement.</p>
+<p>Activate the feature <strong>Enable subcontractor vendor invoice matching to actuals for Project Operations integrated with ERP</strong> for the Finance-side Match Actuals experience.</p>
 <p>Because this is an Integrated with ERP process, dual-write and the Dataverse-to-Finance transaction chain remain important. Troubleshooting should therefore consider the complete path rather than only the AP screen.</p>
 <p><a href="https://learn.microsoft.com/en-us/dynamics365/project-operations/pro/subcontracting/subconpurchaseorders" target="_blank" rel="noopener">Microsoft Learn — Subcontract purchase orders and vendor invoices</a></p>
 
@@ -119,6 +147,7 @@ Operational project cost: ₹2,40,000
 
 <h2>Microsoft references</h2>
 <ul>
+<li><a href="https://learn.microsoft.com/en-us/dynamics365/project-operations/pro/subcontracting/vi-verification" target="_blank" rel="noopener">Verification of vendor invoices with approved Actuals</a></li>
 <li><a href="https://learn.microsoft.com/en-us/dynamics365/project-operations/pro/subcontracting/subconpurchaseorders" target="_blank" rel="noopener">Subcontract purchase orders and vendor invoices</a></li>
 <li><a href="https://learn.microsoft.com/en-us/dynamics365/release-plan/2026wave1/enterprise-resource-planning/dynamics365-project-operations/enable-subcontractor-vendor-invoice-matching-actuals-project-operations-integrated-erp" target="_blank" rel="noopener">Enable subcontractor vendor invoice matching to Actuals</a></li>
 </ul>
