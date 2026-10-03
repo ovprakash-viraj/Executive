@@ -14,6 +14,11 @@ if (menu && nav) {
     menu.setAttribute('aria-expanded', String(open));
     menu.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
   });
+  document.addEventListener('click', event => {
+    if (!event.target.closest('.site-header')) closeMenu();
+  });
+  const desktop = window.matchMedia('(min-width: 1101px)');
+  desktop.addEventListener('change', closeMenu);
   nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape' && nav.classList.contains('open')) {
