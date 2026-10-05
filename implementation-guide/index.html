@@ -10,6 +10,47 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
 <link rel="stylesheet" href="/implementation-guide/guide.css">
+<style>
+.guide-overview{padding:54px 0 24px}
+.guide-overview-grid{display:grid;grid-template-columns:1.35fr .85fr;gap:28px;align-items:start}
+.guide-overview-card{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:26px}
+.guide-overview-card h2{margin-top:0}
+.guide-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+.guide-stat{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff}
+.guide-stat strong{display:block;font-family:"Manrope",sans-serif;font-size:24px;line-height:1.1}
+.guide-stat span{display:block;margin-top:6px;color:#667085;font-size:13px}
+.book-contents{padding:42px 0 72px}
+.book-contents-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:22px}
+.book-contents-head h2{margin:4px 0 0}
+.part-jump{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 34px}
+.part-jump a{display:inline-flex;align-items:center;justify-content:center;min-width:42px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-size:13px;font-weight:700;background:#fff}
+.part-jump a:hover{transform:translateY(-1px)}
+.book-parts{display:grid;gap:20px}
+.book-part{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 10px 28px rgba(21,37,64,.05)}
+.book-part-head{display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center;padding:22px 24px;background:var(--soft);border-bottom:1px solid var(--line)}
+.part-number{display:grid;place-items:center;width:52px;height:52px;border-radius:14px;background:#152540;color:#fff;font-family:"Manrope",sans-serif;font-weight:800;font-size:18px}
+.book-part-head h3{margin:2px 0 0;font-size:20px}
+.book-part-head .kicker{margin:0}
+.part-range{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#667085;white-space:nowrap}
+.chapter-list{list-style:none;margin:0;padding:0}
+.chapter-list li+li{border-top:1px solid var(--line)}
+.chapter-link{display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:center;padding:17px 24px;text-decoration:none;color:inherit;transition:background .18s ease,transform .18s ease}
+.chapter-link:hover{background:#f8fafc}
+.chapter-no{font-family:"Manrope",sans-serif;font-size:13px;font-weight:800;color:#667085;letter-spacing:.04em;text-transform:uppercase}
+.chapter-title{font-family:"Manrope",sans-serif;font-size:16px;font-weight:700;line-height:1.35;color:#152540}
+.chapter-arrow{font-size:19px;color:#667085}
+.book-complete-note{margin-top:28px;padding:24px;border-radius:18px;background:var(--soft);border:1px solid var(--line)}
+.book-complete-note h3{margin-top:0}
+@media(max-width:760px){
+  .guide-overview-grid{grid-template-columns:1fr}
+  .guide-stats{grid-template-columns:1fr}
+  .book-contents-head{display:block}
+  .book-part-head{grid-template-columns:auto 1fr}
+  .part-range{grid-column:2}
+  .chapter-link{grid-template-columns:54px 1fr auto;padding:15px 18px;gap:10px}
+  .chapter-title{font-size:15px}
+}
+</style>
 </head>
 <body>
 <a class="guide-skip" href="#main-content">Skip to content</a>
@@ -26,43 +67,159 @@
 <div class="tag-row"><span>10 parts</span><span>35 chapters · complete</span><span>ERP · CRM · Power Platform</span></div>
 <div class="actions"><a class="btn primary" href="/implementation-guide/chapter-1/">Read Chapter 1 →</a><a class="btn ghost" href="#guide-structure">Explore the book structure</a></div>
 </div></section>
-<section class="section"><div class="wrap narrow">
-<h2>From business intent to sustainable improvement</h2>
-<p class="prose">Enterprise implementation is a business transformation program enabled by technology. This guide follows the complete delivery journey, bringing people, process, data and technology together through practical frameworks, delivery examples and implementation checklists.</p>
-<p class="prose">The principles apply broadly to ERP and CRM programs, with Microsoft Dynamics 365 and Power Platform as practical examples. The focus is on solutions that remain effective after the project team leaves.</p>
-<h2>About the author</h2>
-<p class="prose">OV Prakash is a Project Management Professional (PMP®), Program Management Professional (PgMP®), ISO 9001:2015 Certified Lead Auditor and Lean Six Sigma Black Belt, with over 20 years of experience in enterprise implementation and delivery leadership.</p>
-<h2>Who this guide is for</h2>
-<p class="prose">Project and Program Managers, Delivery Managers, Functional Consultants, Solution Architects, Practice Leads, ERP/CRM consultants, and customer leaders responsible for enterprise implementations.</p>
-<a class="guide-chapter-card" href="/implementation-guide/chapter-1/"><span class="kicker">START READING · CHAPTER 1</span><h2>Understanding Enterprise Business Transformation</h2><p>Explore the four foundations of transformation, the implementation lifecycle, business ownership and the measures of lasting success.</p><span class="text-link">Read the chapter →</span></a>
-<a class="guide-chapter-card" href="/implementation-guide/chapter-2/"><span class="kicker">CONTINUE READING · CHAPTER 2</span><h2>The End-to-End Implementation Lifecycle</h2><p>Follow the ten-stage journey from strategy and presales through hypercare and continuous improvement, with practical examples, readiness decisions and an implementation checklist.</p><span class="text-link">Read Chapter 2 →</span></a>
-<a class="guide-chapter-card" href="/implementation-guide/chapter-3/"><span class="kicker">CONTINUE READING · CHAPTER 3</span><h2>Choosing the Right Implementation Strategy</h2><p>Compare big-bang, phased, pilot-led, parallel and hybrid approaches, and choose rollout boundaries using business dependencies, capacity and readiness evidence.</p><span class="text-link">Read Chapter 3 →</span></a>
-<a class="guide-chapter-card" href="/implementation-guide/chapter-4/"><span class="kicker">PART II BEGINS · CHAPTER 4</span><h2>Understanding the Business Case</h2><p>Connect business problems with measurable outcomes, benefit ownership and total costs, including a worked financial example and an implementation checklist.</p><span class="text-link">Read Chapter 4 →</span></a>
-<a class="guide-chapter-card" href="/implementation-guide/chapter-5/"><span class="kicker">CONTINUE PART II · CHAPTER 5</span><h2>RFI, RFP and RFQ Management</h2><p>Build clear sourcing requests, evaluate supplier evidence, compare commercial responses and transfer commitments into delivery.</p><span class="text-link">Read Chapter 5 →</span></a>
-<a class="guide-chapter-card" href="/implementation-guide/chapter-6/"><p class="kicker">CONTINUE PART II · CHAPTER 6</p><h2>Solution Estimation and Commercial Planning</h2><p>Build credible effort estimates, plan delivery capacity, understand cost and price, and turn commercial commitments into a controlled delivery baseline.</p><span class="text-link">Read Chapter 6 →</span></a>
-<a class="guide-chapter-card" href="/implementation-guide/chapter-7/"><span class="kicker">COMPLETE PART II · CHAPTER 7</span><h2>Building a Strong Statement of Work</h2><p>Define scope, deliverables, acceptance and shared responsibilities, with practical examples, change control and an implementation checklist.</p><span class="text-link">Read Chapter 7 →</span></a>
-<a class="guide-chapter-card" href="/implementation-guide/chapter-8/"><span class="kicker">PART III BEGINS · CHAPTER 8</span><h2>Project Mobilization</h2><p>Turn the signed commitment into delivery readiness through structured handover, team availability, access, discovery preparation and a practical mobilization checklist.</p><span class="text-link">Read Chapter 8 →</span></a>
-<a class="guide-chapter-card" href="/implementation-guide/chapter-9/"><span class="kicker">CONTINUE PART III · CHAPTER 9</span><h2>Building the Implementation Team</h2><p>Define customer and partner roles, clarify accountability, plan specialist capacity and build collaboration and continuity across the implementation lifecycle.</p><span class="text-link">Read Chapter 9 →</span></a>
-<a class="guide-chapter-card" href="/implementation-guide/chapter-10/"><span class="kicker">CONTINUE PART III · CHAPTER 10</span><h2>Governance and Decision-Making</h2><p>Establish decision authority, effective escalation, steering committees and change control, with a worked decision example and a practical governance checklist.</p><span class="text-link">Read Chapter 10 →</span></a>
-<a class="guide-chapter-card" href="/implementation-guide/chapter-11/"><span class="kicker">COMPLETE PART III · CHAPTER 11</span><h2>Project Planning and Delivery Control</h2><p>Build an integrated plan, understand dependencies and critical paths, preserve baselines and use delivery evidence to forecast and recover progress.</p><span class="text-link">Read Chapter 11 →</span></a>
-</div></section>
-<section class="section soft" aria-labelledby="guide-structure"><div class="wrap narrow">
-<p class="kicker">THE BOOK AT A GLANCE</p>
-<h2 id="guide-structure">10 parts. 35 chapters. One complete delivery journey.</h2>
-<p class="prose">All 35 chapters are now available. The complete playbook covers implementation foundations, presales and commercials, mobilization, discovery and design, build and ALM, data and integrations, testing, change management, cutover, go-live, hypercare, rollout and enterprise program leadership.</p>
-<div class="guide-parts"><article><p class="kicker">CHAPTERS 1–3</p><h3>Part I — Understanding Enterprise Implementation</h3><p><a href="/implementation-guide/chapter-1/">Understanding Enterprise Business Transformation</a> · <a href="/implementation-guide/chapter-2/">The End-to-End Implementation Lifecycle</a> · <a href="/implementation-guide/chapter-3/">Choosing the Right Implementation Strategy</a></p></article>
-<article><p class="kicker">CHAPTERS 4–7</p><h3>Part II — Presales, Commercials and Project Formation</h3><p><a href="/implementation-guide/chapter-4/">Understanding the Business Case</a> · <a href="/implementation-guide/chapter-5/">RFI, RFP and RFQ Management</a> · <a href="/implementation-guide/chapter-6/">Solution Estimation and Commercial Planning</a> · <a href="/implementation-guide/chapter-7/">Building a Strong Statement of Work</a></p></article>
-<article><p class="kicker">CHAPTERS 8–11</p><h3>Part III — Project Mobilization and Governance</h3><p><a href="/implementation-guide/chapter-8/">Project Mobilization</a> · <a href="/implementation-guide/chapter-9/">Building the Implementation Team</a> · <a href="/implementation-guide/chapter-10/">Governance and Decision-Making</a> · <a href="/implementation-guide/chapter-11/">Project Planning and Delivery Control</a></p></article>
-<article><p class="kicker">CHAPTERS 12–17</p><h3>Part IV — Discovery, Requirements and Solution Design</h3><p><a href="/implementation-guide/chapter-12/">Running Effective Discovery Workshops</a> · <a href="/implementation-guide/chapter-13/">AS-IS and TO-BE Process Design</a> · <a href="/implementation-guide/chapter-14/">Requirements Management</a> · <a href="/implementation-guide/chapter-15/">Fit-Gap Analysis</a> · <a href="/implementation-guide/chapter-16/">Solution Architecture</a> · <a href="/implementation-guide/chapter-17/">Functional and Technical Design</a></p></article>
-<article><p class="kicker">CHAPTERS 18–20</p><h3>Part V — Configuration, Development and ALM</h3><p><a href="/implementation-guide/chapter-18/">Configuration and Customization Strategy</a> · <a href="/implementation-guide/chapter-19/">Agile Build and Sprint Management</a> · <a href="/implementation-guide/chapter-20/">Application Lifecycle Management</a></p></article>
-<article><p class="kicker">CHAPTERS 21–24</p><h3>Part VI — Data, Integrations and Reporting</h3><p><a href="/implementation-guide/chapter-21/">Enterprise Data Migration Strategy</a> · <a href="/implementation-guide/chapter-22/">Migration Execution and Reconciliation</a> · <a href="/implementation-guide/chapter-23/">Integration Management</a> · <a href="/implementation-guide/chapter-24/">Reporting, Analytics and Business Intelligence</a></p></article>
-<article><p class="kicker">CHAPTERS 25–27</p><h3>Part VII — Testing and Quality Assurance</h3><p><a href="/implementation-guide/chapter-25/">Enterprise Testing Strategy</a> · <a href="/implementation-guide/chapter-26/">User Acceptance Testing</a> · <a href="/implementation-guide/chapter-27/">Defect and Quality Management</a></p></article>
-<article><p class="kicker">CHAPTERS 28–29</p><h3>Part VIII — Change Management and Business Readiness</h3><p><a href="/implementation-guide/chapter-28/">Organizational Change Management</a> · <a href="/implementation-guide/chapter-29/">Training and Knowledge Transfer</a></p></article>
-<article><p class="kicker">CHAPTERS 30–33</p><h3>Part IX — Cutover, Go-Live and Hypercare</h3><p><a href="/implementation-guide/chapter-30/">Cutover Planning</a> · <a href="/implementation-guide/chapter-31/">Go-Live Readiness</a> · <a href="/implementation-guide/chapter-32/">Production Deployment and Go-Live</a> · <a href="/implementation-guide/chapter-33/">Hypercare and Stabilization</a></p></article>
-<article><p class="kicker">CHAPTERS 34–35</p><h3>Part X — Enterprise Rollout, Governance and Leadership</h3><p><a href="/implementation-guide/chapter-34/">Multi-Business-Unit and Global Rollouts</a> · <a href="/implementation-guide/chapter-35/">Running Successful Enterprise Programs</a></p></article></div>
-<div class="guide-toolkit"><h3>Planned companion toolkit</h3><p>Reusable project charters, RACI matrices, RAID registers, requirements and fit-gap trackers, migration and reconciliation templates, UAT trackers, cutover plans, go-live checklists and hypercare trackers will support the book’s practical approach.</p></div>
-<div class="actions"><a class="btn primary" href="/implementation-guide/chapter-1/">Begin with Chapter 1 →</a><a class="btn ghost" href="/implementation-guide/chapter-35/">Read Chapter 35 →</a></div>
-</div></section>
+
+<section class="guide-overview">
+  <div class="wrap narrow">
+    <div class="guide-overview-grid">
+      <div>
+        <p class="kicker">ABOUT THE PLAYBOOK</p>
+        <h2>From business intent to sustainable improvement</h2>
+        <p class="prose">Enterprise implementation is a business transformation program enabled by technology. This complete guide follows the delivery journey from business case and presales through discovery, solution design, build, data, testing, organizational change, go-live, hypercare and enterprise rollout.</p>
+        <p class="prose">The principles apply broadly to ERP and CRM programs, with Microsoft Dynamics 365 and Power Platform as practical examples. Each chapter combines delivery practices, enterprise examples, implementation checklists and leadership takeaways.</p>
+        <div class="guide-stats">
+          <div class="guide-stat"><strong>10</strong><span>Structured Parts</span></div>
+          <div class="guide-stat"><strong>35</strong><span>Complete Chapters</span></div>
+          <div class="guide-stat"><strong>End-to-End</strong><span>Implementation Journey</span></div>
+        </div>
+      </div>
+      <aside class="guide-overview-card">
+        <p class="kicker">ABOUT THE AUTHOR</p>
+        <h2>OV Prakash</h2>
+        <p><strong>PMP®, PgMP®</strong><br>ISO 9001:2015 Certified Lead Auditor<br>Lean Six Sigma Black Belt</p>
+        <p>20+ years of enterprise implementation and delivery leadership experience across ERP, CRM, Dynamics 365 and transformation programs.</p>
+        <p><strong>Who this is for:</strong> Project & Program Managers, Delivery Leaders, Functional Consultants, Solution Architects, Practice Leads and customer transformation leaders.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="book-contents soft" aria-labelledby="guide-structure">
+  <div class="wrap narrow">
+    <div class="book-contents-head">
+      <div>
+        <p class="kicker">COMPLETE BOOK CONTENTS</p>
+        <h2 id="guide-structure">All 35 Chapters</h2>
+      </div>
+      <p class="prose">Choose any chapter below or read sequentially from Chapter 1.</p>
+    </div>
+
+    <nav class="part-jump" aria-label="Jump to a book part">
+      <a href="#part-1" aria-label="Jump to Part I">I</a><a href="#part-2" aria-label="Jump to Part II">II</a><a href="#part-3" aria-label="Jump to Part III">III</a><a href="#part-4" aria-label="Jump to Part IV">IV</a><a href="#part-5" aria-label="Jump to Part V">V</a><a href="#part-6" aria-label="Jump to Part VI">VI</a><a href="#part-7" aria-label="Jump to Part VII">VII</a><a href="#part-8" aria-label="Jump to Part VIII">VIII</a><a href="#part-9" aria-label="Jump to Part IX">IX</a><a href="#part-10" aria-label="Jump to Part X">X</a>
+    </nav>
+
+    <div class="book-parts">
+      
+<article class="book-part" id="part-1">
+  <div class="book-part-head">
+    <div class="part-number">I</div>
+    <div><p class="kicker">PART I</p><h3>Understanding Enterprise Implementation</h3></div>
+    <div class="part-range">Chapters 1–3</div>
+  </div>
+  <ol class="chapter-list">
+    <li><a class="chapter-link" href="/implementation-guide/chapter-1/"><span class="chapter-no">Chapter 1</span><span class="chapter-title">Understanding Enterprise Business Transformation</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-2/"><span class="chapter-no">Chapter 2</span><span class="chapter-title">The End-to-End Implementation Lifecycle</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-3/"><span class="chapter-no">Chapter 3</span><span class="chapter-title">Choosing the Right Implementation Strategy</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li>
+  </ol>
+</article>
+<article class="book-part" id="part-2">
+  <div class="book-part-head">
+    <div class="part-number">II</div>
+    <div><p class="kicker">PART II</p><h3>Presales, Commercials and Project Formation</h3></div>
+    <div class="part-range">Chapters 4–7</div>
+  </div>
+  <ol class="chapter-list">
+    <li><a class="chapter-link" href="/implementation-guide/chapter-4/"><span class="chapter-no">Chapter 4</span><span class="chapter-title">Understanding the Business Case</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-5/"><span class="chapter-no">Chapter 5</span><span class="chapter-title">RFI, RFP and RFQ Management</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-6/"><span class="chapter-no">Chapter 6</span><span class="chapter-title">Solution Estimation and Commercial Planning</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-7/"><span class="chapter-no">Chapter 7</span><span class="chapter-title">Building a Strong Statement of Work</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li>
+  </ol>
+</article>
+<article class="book-part" id="part-3">
+  <div class="book-part-head">
+    <div class="part-number">III</div>
+    <div><p class="kicker">PART III</p><h3>Project Mobilization and Governance</h3></div>
+    <div class="part-range">Chapters 8–11</div>
+  </div>
+  <ol class="chapter-list">
+    <li><a class="chapter-link" href="/implementation-guide/chapter-8/"><span class="chapter-no">Chapter 8</span><span class="chapter-title">Project Mobilization</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-9/"><span class="chapter-no">Chapter 9</span><span class="chapter-title">Building the Implementation Team</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-10/"><span class="chapter-no">Chapter 10</span><span class="chapter-title">Governance and Decision-Making</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-11/"><span class="chapter-no">Chapter 11</span><span class="chapter-title">Project Planning and Delivery Control</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li>
+  </ol>
+</article>
+<article class="book-part" id="part-4">
+  <div class="book-part-head">
+    <div class="part-number">IV</div>
+    <div><p class="kicker">PART IV</p><h3>Discovery, Requirements and Solution Design</h3></div>
+    <div class="part-range">Chapters 12–17</div>
+  </div>
+  <ol class="chapter-list">
+    <li><a class="chapter-link" href="/implementation-guide/chapter-12/"><span class="chapter-no">Chapter 12</span><span class="chapter-title">Running Effective Discovery Workshops</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-13/"><span class="chapter-no">Chapter 13</span><span class="chapter-title">AS-IS and TO-BE Process Design</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-14/"><span class="chapter-no">Chapter 14</span><span class="chapter-title">Requirements Management</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-15/"><span class="chapter-no">Chapter 15</span><span class="chapter-title">Fit-Gap Analysis</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-16/"><span class="chapter-no">Chapter 16</span><span class="chapter-title">Solution Architecture</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-17/"><span class="chapter-no">Chapter 17</span><span class="chapter-title">Functional and Technical Design</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li>
+  </ol>
+</article>
+<article class="book-part" id="part-5">
+  <div class="book-part-head">
+    <div class="part-number">V</div>
+    <div><p class="kicker">PART V</p><h3>Configuration, Development and ALM</h3></div>
+    <div class="part-range">Chapters 18–20</div>
+  </div>
+  <ol class="chapter-list">
+    <li><a class="chapter-link" href="/implementation-guide/chapter-18/"><span class="chapter-no">Chapter 18</span><span class="chapter-title">Configuration and Customization Strategy</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-19/"><span class="chapter-no">Chapter 19</span><span class="chapter-title">Agile Build and Sprint Management</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-20/"><span class="chapter-no">Chapter 20</span><span class="chapter-title">Application Lifecycle Management</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li>
+  </ol>
+</article>
+<article class="book-part" id="part-6">
+  <div class="book-part-head">
+    <div class="part-number">VI</div>
+    <div><p class="kicker">PART VI</p><h3>Data, Integrations and Reporting</h3></div>
+    <div class="part-range">Chapters 21–24</div>
+  </div>
+  <ol class="chapter-list">
+    <li><a class="chapter-link" href="/implementation-guide/chapter-21/"><span class="chapter-no">Chapter 21</span><span class="chapter-title">Enterprise Data Migration Strategy</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-22/"><span class="chapter-no">Chapter 22</span><span class="chapter-title">Migration Execution and Reconciliation</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-23/"><span class="chapter-no">Chapter 23</span><span class="chapter-title">Integration Management</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-24/"><span class="chapter-no">Chapter 24</span><span class="chapter-title">Reporting, Analytics and Business Intelligence</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li>
+  </ol>
+</article>
+<article class="book-part" id="part-7">
+  <div class="book-part-head">
+    <div class="part-number">VII</div>
+    <div><p class="kicker">PART VII</p><h3>Testing and Quality Assurance</h3></div>
+    <div class="part-range">Chapters 25–27</div>
+  </div>
+  <ol class="chapter-list">
+    <li><a class="chapter-link" href="/implementation-guide/chapter-25/"><span class="chapter-no">Chapter 25</span><span class="chapter-title">Enterprise Testing Strategy</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-26/"><span class="chapter-no">Chapter 26</span><span class="chapter-title">User Acceptance Testing</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-27/"><span class="chapter-no">Chapter 27</span><span class="chapter-title">Defect and Quality Management</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li>
+  </ol>
+</article>
+<article class="book-part" id="part-8">
+  <div class="book-part-head">
+    <div class="part-number">VIII</div>
+    <div><p class="kicker">PART VIII</p><h3>Change Management and Business Readiness</h3></div>
+    <div class="part-range">Chapters 28–29</div>
+  </div>
+  <ol class="chapter-list">
+    <li><a class="chapter-link" href="/implementation-guide/chapter-28/"><span class="chapter-no">Chapter 28</span><span class="chapter-title">Organizational Change Management</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-29/"><span class="chapter-no">Chapter 29</span><span class="chapter-title">Training and Knowledge Transfer</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li>
+  </ol>
+</article>
+<article class="book-part" id="part-9">
+  <div class="book-part-head">
+    <div class="part-number">IX</div>
+    <div><p class="kicker">PART IX</p><h3>Cutover, Go-Live and Hypercare</h3></div>
+    <div class="part-range">Chapters 30–33</div>
+  </div>
+  <ol class="chapter-list">
+    <li><a class="chapter-link" href="/implementation-guide/chapter-30/"><span class="chapter-no">Chapter 30</span><span class="chapter-title">Cutover Planning</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-31/"><span class="chapter-no">Chapter 31</span><span class="chapter-title">Go-Live Readiness</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-32/"><span class="chapter-no">Chapter 32</span><span class="chapter-title">Production Deployment and Go-Live</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-33/"><span class="chapter-no">Chapter 33</span><span class="chapter-title">Hypercare and Stabilization</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li>
+  </ol>
+</article>
+<article class="book-part" id="part-10">
+  <div class="book-part-head">
+    <div class="part-number">X</div>
+    <div><p class="kicker">PART X</p><h3>Enterprise Rollout, Governance and Leadership</h3></div>
+    <div class="part-range">Chapters 34–35</div>
+  </div>
+  <ol class="chapter-list">
+    <li><a class="chapter-link" href="/implementation-guide/chapter-34/"><span class="chapter-no">Chapter 34</span><span class="chapter-title">Multi-Business-Unit and Global Rollouts</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li><li><a class="chapter-link" href="/implementation-guide/chapter-35/"><span class="chapter-no">Chapter 35</span><span class="chapter-title">Running Successful Enterprise Programs</span><span class="chapter-arrow" aria-hidden="true">→</span></a></li>
+  </ol>
+</article>
+    </div>
+
+    <div class="book-complete-note">
+      <h3>The Enterprise Implementation Playbook is complete</h3>
+      <p>All 10 parts and all 35 chapters are published. Start at Chapter 1 for the full journey, or jump directly to the part most relevant to your implementation stage.</p>
+      <div class="actions"><a class="btn primary" href="/implementation-guide/chapter-1/">Start with Chapter 1 →</a><a class="btn ghost" href="/implementation-guide/chapter-35/">Go to Chapter 35 →</a></div>
+    </div>
+
+    <div class="guide-toolkit"><h3>Planned companion toolkit</h3><p>Reusable project charters, RACI matrices, RAID registers, requirements and fit-gap trackers, migration and reconciliation templates, UAT trackers, cutover plans, go-live checklists and hypercare trackers will support the book’s practical approach.</p></div>
+  </div>
+</section>
 </main>
 <footer><div class="wrap footer"><span>© <span id="year"></span> OV Prakash</span><a href="/implementation-guide/">The Enterprise Implementation Playbook · OV Prakash</a></div></footer>
 <script src="/script.js"></script>
