@@ -111,3 +111,22 @@ h1,h2,h3{font-family:"Manrope",sans-serif;line-height:1.12;margin-top:0}a{color:
 .case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}.case-grid article{border:1px solid var(--line);border-radius:18px;padding:28px}.case-grid small{color:var(--brand);font-weight:700;letter-spacing:.08em}.case-grid h3{font-size:22px;margin:14px 0 18px}.case-grid p{color:var(--muted);font-size:15px}.case-grid p strong{color:var(--ink)}
 @media(max-width:900px){.profile-hero-grid,.hub-feature{grid-template-columns:1fr}.profile-card{max-width:520px}.expertise-card-grid,.knowledge-grid,.case-grid{grid-template-columns:1fr 1fr}.experience-bands>div{grid-template-columns:1fr;gap:8px}}
 @media(max-width:680px){.expertise-card-grid,.knowledge-grid,.case-grid{grid-template-columns:1fr}.hub-stats span{flex:1;min-width:100px}.playbook-panel{padding:26px}.playbook-panel strong{font-size:23px}}
+
+
+/* Expanded domain knowledge */
+.domain-knowledge-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+.domain-knowledge-grid article{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px}
+.domain-knowledge-grid article>span{color:var(--brand);font-weight:700}
+.domain-knowledge-grid h3{font-size:21px;margin:14px 0 10px}
+.domain-knowledge-grid p{margin:0;color:var(--muted)}
+.domain-clusters{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
+.domain-clusters>div{border:1px solid var(--line);border-radius:16px;padding:22px;background:#fff;display:flex;flex-direction:column;gap:6px}
+.domain-clusters small{color:var(--brand);font-weight:700;letter-spacing:.08em}
+.domain-clusters strong{font-family:"Manrope",sans-serif;font-size:19px}
+.domain-clusters span{color:var(--muted);font-size:14px}
+.industry-strip{margin-top:28px;padding:24px;border-radius:18px;background:var(--dark);color:#fff}
+.industry-strip-label{display:block;color:#9ec1ff;font-size:11px;font-weight:700;letter-spacing:.13em;margin-bottom:14px}
+.industry-tags{display:flex;gap:9px;flex-wrap:wrap}
+.industry-tags span{border:1px solid #344054;background:#172033;border-radius:999px;padding:8px 12px;font-size:13px;color:#e5e7eb}
+@media(max-width:900px){.domain-knowledge-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.domain-knowledge-grid,.domain-clusters{grid-template-columns:1fr}}
