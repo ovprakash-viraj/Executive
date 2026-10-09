@@ -43,7 +43,7 @@ if (year) year.textContent = new Date().getFullYear();
   section.id = 'reader-reply';
   section.className = 'reader-reply-section';
   section.setAttribute('aria-labelledby', 'reader-reply-title');
-  section.innerHTML = \`
+  section.innerHTML = `
     <div class="reader-reply-box">
       <h2 id="reader-reply-title">Leave a Reply</h2>
       <p class="reader-reply-intro">Your email address will not be published. Required fields are marked <span aria-hidden="true">*</span></p>
@@ -62,7 +62,7 @@ if (year) year.textContent = new Date().getFullYear();
         <button type="submit" class="reader-reply-button">Post Comment</button>
         <p id="reader-reply-status" class="reader-reply-status" role="status" aria-live="polite"></p>
       </form>
-    </div>\`;
+    </div>`;
   const footerResources = main.querySelector('.guide-related-resources');
   if (footerResources) main.insertBefore(section, footerResources);
   else main.appendChild(section);
