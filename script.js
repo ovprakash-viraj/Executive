@@ -34,8 +34,9 @@ if (year) year.textContent = new Date().getFullYear();
 /* Shared article feedback form: renders on individual article and guide chapter pages. */
 (() => {
   const pathname = location.pathname;
-  const isArticle = !/^\/(?:articles|implementation-guide)\/?$/.test(pathname)
-    && (pathname.startsWith('/implementation-guide/chapter-') || !!document.querySelector('main article'));
+  const isArticle = !pathname.startsWith('/implementation-guide/')
+    && !/^\/(?:articles|blog)\/?$/.test(pathname)
+    && !!document.querySelector('main article');
   if (!isArticle || document.getElementById('reader-reply')) return;
   const main = document.querySelector('main');
   if (!main) return;
