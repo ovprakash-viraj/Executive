@@ -188,3 +188,25 @@ h1,h2,h3{font-family:"Manrope",sans-serif;line-height:1.12;margin-top:0}a{color:
 @media(max-width:1100px){.topic-grid{grid-template-columns:repeat(3,1fr)}.blog-feature-layout{grid-template-columns:1fr}}
 @media(max-width:900px){.blog-hero-grid,.featured-grid{grid-template-columns:1fr}.blog-stats{grid-template-columns:repeat(2,1fr)}.latest-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:680px){.blog-hero{padding:72px 0 60px}.blog-section-head{flex-direction:column;align-items:flex-start}.blog-search-box{width:100%}.topic-grid,.latest-grid,.blog-stats{grid-template-columns:1fr}.featured-article{padding:22px}.featured-visual{min-height:520px}.info-node{width:120px;min-height:78px;font-size:12px}.infographic-center{width:136px;height:136px;font-size:22px}.most-read-item{grid-template-columns:1fr}.thumb{height:120px}}
+
+
+/* Reader comment form — matches the blog reply reference without WordPress dependencies. */
+.reader-reply-section{width:min(760px,calc(100% - 32px));margin:44px auto 64px;font-family:"DM Sans",sans-serif}
+.reader-reply-box{border:1px solid #d9e1ec;border-radius:13px;background:#fff;padding:34px 24px 36px;color:#101828;box-shadow:0 1px 1px rgba(16,24,40,.02)}
+.reader-reply-box h2{text-align:center;font-size:21px;font-weight:600;margin:0 0 21px}
+.reader-reply-intro{margin:0 0 24px;font-size:17px}
+#reader-reply-form{display:flex;flex-direction:column}
+#reader-reply-form>label:not(.reader-reply-save){font-size:17px;margin:0 0 6px}
+#reader-reply-form>input,#reader-reply-form>textarea{font:inherit;font-size:16px;color:#101828;background:#fff;border:1px solid #a9b8ce;border-radius:5px;padding:12px 14px;width:100%;margin:0 0 20px}
+#reader-reply-form>textarea{min-height:180px;resize:vertical}
+#reader-reply-form>input{height:52px}
+#reader-reply-form>input:focus,#reader-reply-form>textarea:focus{outline:2px solid #2f6fed;outline-offset:1px}
+.reader-reply-save{display:flex;gap:12px;align-items:flex-start;font-size:16px;line-height:1.5;margin:1px 0 14px;cursor:pointer}
+.reader-reply-save input{flex:0 0 auto;margin-top:6px;accent-color:#244d8a}
+.reader-reply-note{font-size:13px;color:#667085;margin:0 0 16px}
+.reader-reply-button{align-self:flex-start;padding:12px 21px;border:2px solid #111827;border-radius:6px;background:linear-gradient(#174477,#2e66bc);color:white;font-weight:700;font-size:15px;cursor:pointer}
+.reader-reply-button:hover{background:#1d4a89}
+.reader-reply-button:disabled{cursor:wait;opacity:.65}
+.reader-reply-status{margin:14px 0 0;font-size:14px}
+.reader-reply-hidden{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+@media(max-width:600px){.reader-reply-box{padding:24px 18px}.reader-reply-intro{font-size:15px}.reader-reply-section{margin:30px auto 48px}}
