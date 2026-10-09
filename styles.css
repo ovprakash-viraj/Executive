@@ -210,3 +210,6 @@ h1,h2,h3{font-family:"Manrope",sans-serif;line-height:1.12;margin-top:0}a{color:
 .reader-reply-status{margin:14px 0 0;font-size:14px}
 .reader-reply-hidden{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
 @media(max-width:600px){.reader-reply-box{padding:24px 18px}.reader-reply-intro{font-size:15px}.reader-reply-section{margin:30px auto 48px}}
+
+/* Dedicated staffing and time-entry blog thumbnail. */
+.latest-thumb.article-social-thumb{display:block;width:100%;height:165px;object-fit:cover;object-position:center}
