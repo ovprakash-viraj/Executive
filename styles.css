@@ -210,3 +210,5 @@ h1,h2,h3{font-family:"Manrope",sans-serif;line-height:1.12;margin-top:0}a{color:
 /* Logos supplied by the owner, displayed from the original reference artwork. */
 .cert-logo{display:block;flex:none;width:176px;height:132px;margin:0 0 22px;background-image:url('/assets/certifications/certification-logos.png');background-repeat:no-repeat;background-size:192px 517px;border-radius:16px;align-self:center}
 .cert-logo-pmp{background-position:center -6px}.cert-logo-black-belt{background-position:center -199px}.cert-logo-bsi{background-position:center -390px}
+
+.cert-logo-pmp{background-image:url('/assets/certifications/pmp-certification-logo.png');background-size:contain;background-position:center}
