@@ -214,3 +214,6 @@ h1,h2,h3{font-family:"Manrope",sans-serif;line-height:1.12;margin-top:0}a{color:
 .cert-logo-pmp{background-image:url('/assets/certifications/pmp-certification-logo.png');background-size:contain;background-position:center}
 
 .cert-logo-black-belt{background-image:url('/assets/certifications/black-belt-logo-full.webp');background-size:contain;background-position:center}
+
+/* Four certificates form balanced rows on desktop and tablet. */
+.cert-grid{grid-template-columns:repeat(2,minmax(0,1fr))}@media(max-width:680px){.cert-grid{grid-template-columns:1fr}}
